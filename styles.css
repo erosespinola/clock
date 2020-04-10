@@ -14,28 +14,30 @@ body {
 #clock {
   display: flex;
   flex-wrap: wrap;
+  font-size: 100px;
   justify-content: center;
 }
 
 #date {
   display: flex;
   justify-content: center;
+  margin-bottom: 1em;
 }
 
 .colon {
-  font-size: 100px;
   align-self: center;
 }
 
 .number {
   display: flex;
-  font-size: 100px;
 
-  flex-basis: 2.5em;
+  width: 2.5em;
   height: 2.5em;
 
   margin: 0.1em;
   border-radius: 0.2em;
+  border: 0.1em solid white;
+  box-sizing: border-box;
   background-color: #222c3a;
 
   justify-content: center;
