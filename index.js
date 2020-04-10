@@ -17,8 +17,8 @@ const MONTHS = [
 function startTime() {
   const today = new Date();
   const h = today.getHours();
-  const m = checkTime(today.getMinutes());
-  const s = checkTime(today.getSeconds());
+  const m = leadingZero(today.getMinutes());
+  const s = leadingZero(today.getSeconds());
 
   const day = DAYS[today.getDay()];
   const month = MONTHS[today.getMonth()];
@@ -47,7 +47,7 @@ function setDate(date) {
   value.innerHTML = date;
 }
 
-function checkTime(number) {
+function leadingZero(number) {
   if (number < 10) {
     return `0${number}`;
   }
